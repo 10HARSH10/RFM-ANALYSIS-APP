@@ -14,4 +14,4 @@ jobs:
       - name: Ping App URL
         # Replace the URL below with your actual Streamlit app link
         run: |
-          curl -sL https://rfm-analysis-app-ysj4w3rrmgchha3rtv5gef.streamlit.app > /dev/null
+          curl -sL --cookie-jar cookies.txt --cookie cookies.txt https://rfm-analysis-app-ysj4w3rrmgchha3rtv5gef.streamlit.app/ > /dev/null
